@@ -150,7 +150,7 @@ local function on_character_select_load()
         E_MODEL_CHAR,       -- Character Model
         CT_MARIO,           -- Override Character
         TEX_CHAR_LIFE_ICON, -- Life Icon
-        1,                  -- Camera Scale
+        1                  -- Camera Scale
     )
 
     -- Adds cap models to your character
