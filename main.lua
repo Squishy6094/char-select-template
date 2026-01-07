@@ -41,21 +41,23 @@ characterTable = {
         lifeIcon = get_texture_info("exclamation-icon"),     -- File extension (.png) not needed here, converted to .tex on refresh
         camScale = 1,                                        -- Sets the camera scale of your character in the CS menu
 
+        graffiti = get_texture_info("exclamation-icon"),
+
         -- Health Meter Textures
         meter = {
             label = {
-                left = get_texture_info("char-select-custom-meter-left"),
-                right = get_texture_info("char-select-custom-meter-right"),
+                left = get_texture_info("char_select_custom_meter_left"),
+                right = get_texture_info("char_select_custom_meter_right"),
             },
             pie = {
-                [1] = get_texture_info("char-select-custom-meter-pie1"),
-                [2] = get_texture_info("char-select-custom-meter-pie2"),
-                [3] = get_texture_info("char-select-custom-meter-pie3"),
-                [4] = get_texture_info("char-select-custom-meter-pie4"),
-                [5] = get_texture_info("char-select-custom-meter-pie5"),
-                [6] = get_texture_info("char-select-custom-meter-pie6"),
-                [7] = get_texture_info("char-select-custom-meter-pie7"),
-                [8] = get_texture_info("char-select-custom-meter-pie8"),
+                [1] = get_texture_info("char_select_custom_meter_pie1"),
+                [2] = get_texture_info("char_select_custom_meter_pie2"),
+                [3] = get_texture_info("char_select_custom_meter_pie3"),
+                [4] = get_texture_info("char_select_custom_meter_pie4"),
+                [5] = get_texture_info("char_select_custom_meter_pie5"),
+                [6] = get_texture_info("char_select_custom_meter_pie6"),
+                [7] = get_texture_info("char_select_custom_meter_pie7"),
+                [8] = get_texture_info("char_select_custom_meter_pie8"),
             }
         },
 
@@ -97,53 +99,53 @@ characterTable = {
         -- Sounds in 16000hz ('0' in quality) and mono are recommended for optimization and authenticity.
         -- (.aiff, .ogg, and .mp3 are supported)
         voices = {
-            [CHAR_SOUND_OKEY_DOKEY] =        'CustomStartGame.ogg', -- Starting game
-        	[CHAR_SOUND_LETS_A_GO] =         'CustomStartLevel.ogg', -- Starting level
-        	[CHAR_SOUND_GAME_OVER] =         'CustomGameOver.ogg', -- Game Overed
-        	[CHAR_SOUND_PUNCH_YAH] =         'CustomPunch1.ogg', -- Punch 1
-        	[CHAR_SOUND_PUNCH_WAH] =         'CustomPunch2.ogg', -- Punch 2
-        	[CHAR_SOUND_PUNCH_HOO] =         'CustomPunch3.ogg', -- Punch 3
+            [CHAR_SOUND_OKEY_DOKEY] =         'CustomStartGame.ogg', -- Starting game
+        	[CHAR_SOUND_LETS_A_GO] =          'CustomStartLevel.ogg', -- Starting level
+        	[CHAR_SOUND_GAME_OVER] =          'CustomGameOver.ogg', -- Game Overed
+        	[CHAR_SOUND_PUNCH_YAH] =          'CustomPunch1.ogg', -- Punch 1
+        	[CHAR_SOUND_PUNCH_WAH] =          'CustomPunch2.ogg', -- Punch 2
+        	[CHAR_SOUND_PUNCH_HOO] =          'CustomPunch3.ogg', -- Punch 3
         	[CHAR_SOUND_YAH_WAH_HOO] =       {'CustomJump1.ogg', 'CustomJump2.ogg', 'CustomJump3.ogg'}, -- First Jump Sounds
-        	[CHAR_SOUND_HOOHOO] =            'CustomDoubleJump.ogg', -- Second jump sound
+        	[CHAR_SOUND_HOOHOO] =             'CustomDoubleJump.ogg', -- Second jump sound
         	[CHAR_SOUND_YAHOO_WAHA_YIPPEE] = {'CustomTripleJump1.ogg', 'CustomTripleJump2.ogg'}, -- Triple jump sounds
-        	[CHAR_SOUND_UH] =                'CustomBonk.ogg', -- Soft wall bonk
-        	[CHAR_SOUND_UH2] =               'CustomLedgeGetUp.ogg', -- Quick ledge get up
-        	[CHAR_SOUND_UH2_2] =             'CustomLongJumpLand.ogg', -- Landing after long jump
-        	[CHAR_SOUND_DOH] =               'CustomBonk.ogg', -- Hard wall bonk
-        	[CHAR_SOUND_OOOF] =              'CustomBonk.ogg', -- Attacked in air
-        	[CHAR_SOUND_OOOF2] =             'CustomBonk.ogg', -- Land from hard bonk
-        	[CHAR_SOUND_HAHA] =              'CustomTripleJumpLand.ogg', -- Landing triple jump
-        	[CHAR_SOUND_HAHA_2] =            'CustomWaterLanding.ogg', -- Landing in water from big fall
-        	[CHAR_SOUND_YAHOO] =             'CustomLongJump.ogg', -- Long jump
-        	[CHAR_SOUND_DOH] =               'CustomBonk.ogg', -- Long jump wall bonk
-        	[CHAR_SOUND_WHOA] =              'CustomGrabLedge.ogg', -- Grabbing ledge
-        	[CHAR_SOUND_EEUH] =              'CustomClimbLedge.ogg', -- Climbing over ledge
-        	[CHAR_SOUND_WAAAOOOW] =          'CustomFalling.ogg', -- Falling a long distance
-        	[CHAR_SOUND_TWIRL_BOUNCE] =      'CustomFlowerBounce.ogg', -- Bouncing off of a flower spring
-        	[CHAR_SOUND_GROUND_POUND_WAH] =  'CustomGroundPound.ogg', -- Ground Pound after startup
-        	[CHAR_SOUND_WAH2] =              'CustomThrow.ogg', -- Throwing something
-        	[CHAR_SOUND_HRMM] =              'CustomLift.ogg', -- Lifting something
-        	[CHAR_SOUND_HERE_WE_GO] =        'CustomGetStar.ogg', -- Star get
-        	[CHAR_SOUND_SO_LONGA_BOWSER] =   'CustomThrowBowser.ogg', -- Throwing Bowser
+        	[CHAR_SOUND_UH] =                 'CustomBonk.ogg', -- Soft wall bonk
+        	[CHAR_SOUND_UH2] =                'CustomLedgeGetUp.ogg', -- Quick ledge get up
+        	[CHAR_SOUND_UH2_2] =              'CustomLongJumpLand.ogg', -- Landing after long jump
+        	[CHAR_SOUND_DOH] =                'CustomBonk.ogg', -- Hard wall bonk
+        	[CHAR_SOUND_OOOF] =               'CustomBonk.ogg', -- Attacked in air
+        	[CHAR_SOUND_OOOF2] =              'CustomBonk.ogg', -- Land from hard bonk
+        	[CHAR_SOUND_HAHA] =               'CustomTripleJumpLand.ogg', -- Landing triple jump
+        	[CHAR_SOUND_HAHA_2] =             'CustomWaterLanding.ogg', -- Landing in water from big fall
+        	[CHAR_SOUND_YAHOO] =              'CustomLongJump.ogg', -- Long jump
+        	[CHAR_SOUND_DOH] =                'CustomBonk.ogg', -- Long jump wall bonk
+        	[CHAR_SOUND_WHOA] =               'CustomGrabLedge.ogg', -- Grabbing ledge
+        	[CHAR_SOUND_EEUH] =               'CustomClimbLedge.ogg', -- Climbing over ledge
+        	[CHAR_SOUND_WAAAOOOW] =           'CustomFalling.ogg', -- Falling a long distance
+        	[CHAR_SOUND_TWIRL_BOUNCE] =       'CustomFlowerBounce.ogg', -- Bouncing off of a flower spring
+        	[CHAR_SOUND_GROUND_POUND_WAH] =   'CustomGroundPound.ogg', -- Ground Pound after startup
+        	[CHAR_SOUND_WAH2] =               'CustomThrow.ogg', -- Throwing something
+        	[CHAR_SOUND_HRMM] =               'CustomLift.ogg', -- Lifting something
+        	[CHAR_SOUND_HERE_WE_GO] =         'CustomGetStar.ogg', -- Star get
+        	[CHAR_SOUND_SO_LONGA_BOWSER] =    'CustomThrowBowser.ogg', -- Throwing Bowser
         --DAMAGE
-        	[CHAR_SOUND_ATTACKED] =          'CustomDamaged.ogg', -- Damaged
-        	[CHAR_SOUND_PANTING] =           'CustomPanting.ogg', -- Low health
-        	[CHAR_SOUND_PANTING_COLD] =      'CustomPanting.ogg', -- Getting cold
-        	[CHAR_SOUND_ON_FIRE] =           'CustomBurned.ogg', -- Burned
+        	[CHAR_SOUND_ATTACKED] =     'CustomDamaged.ogg', -- Damaged
+        	[CHAR_SOUND_PANTING] =      'CustomPanting.ogg', -- Low health
+        	[CHAR_SOUND_PANTING_COLD] = 'CustomPanting.ogg', -- Getting cold
+        	[CHAR_SOUND_ON_FIRE] =      'CustomBurned.ogg', -- Burned
         --SLEEP SOUNDS
-        	[CHAR_SOUND_IMA_TIRED] =         'CustomTired.ogg', -- Mario feeling tired
-        	[CHAR_SOUND_YAWNING] =           'CustomYawn.ogg', -- Mario yawning before he sits down to sleep
-        	[CHAR_SOUND_SNORING1] =          'CustomSnore.ogg', -- Snore Inhale
-        	[CHAR_SOUND_SNORING2] =          'CustomExhale.ogg', -- Exhale
-        	[CHAR_SOUND_SNORING3] =          'CustomSleepTalk.ogg', -- Sleep talking / mumbling
+        	[CHAR_SOUND_IMA_TIRED] = 'CustomTired.ogg', -- Mario feeling tired
+        	[CHAR_SOUND_YAWNING] =   'CustomYawn.ogg', -- Mario yawning before he sits down to sleep
+        	[CHAR_SOUND_SNORING1] =  'CustomSnore.ogg', -- Snore Inhale
+        	[CHAR_SOUND_SNORING2] =  'CustomExhale.ogg', -- Exhale
+        	[CHAR_SOUND_SNORING3] =  'CustomSleepTalk.ogg', -- Sleep talking / mumbling
         --COUGHING (USED IN THE GAS MAZE)
-        	[CHAR_SOUND_COUGHING1] =         'CustomCough1.ogg', -- Cough take 1
-        	[CHAR_SOUND_COUGHING2] =         'CustomCough2.ogg', -- Cough take 2
-        	[CHAR_SOUND_COUGHING3] =         'CustomCough3.ogg', -- Cough take 3
+        	[CHAR_SOUND_COUGHING1] = 'CustomCough1.ogg', -- Cough take 1
+        	[CHAR_SOUND_COUGHING2] = 'CustomCough2.ogg', -- Cough take 2
+        	[CHAR_SOUND_COUGHING3] = 'CustomCough3.ogg', -- Cough take 3
         --DEATH
-        	[CHAR_SOUND_DYING] =             'CustomDying.ogg', -- Dying from damage
-        	[CHAR_SOUND_DROWNING] =          'CustomDrowning.ogg', -- Running out of air underwater
-        	[CHAR_SOUND_MAMA_MIA] =          'CustomLeaveLevel.ogg' -- Booted out of level
+        	[CHAR_SOUND_DYING] =    'CustomDying.ogg', -- Dying from damage
+        	[CHAR_SOUND_DROWNING] = 'CustomDrowning.ogg', -- Running out of air underwater
+        	[CHAR_SOUND_MAMA_MIA] = 'CustomLeaveLevel.ogg' -- Booted out of level
         },
         
         -- Replaces Vanilla Animations or Adds Custom Animations.
@@ -179,6 +181,7 @@ local function on_character_select_load()
             end
         end
         charSelect.character_set_category(tablePos, TEXT_PACK_NAME)
+        charSelect.character_add_graffiti(tablePos, graffiti)
 
         if anims then charSelect.character_add_animations(model, anims, eyes, hands) end
 
