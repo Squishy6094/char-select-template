@@ -167,6 +167,9 @@ local function on_character_select_load()
     -- (Textures do not exist in template)
     -- _G.charSelect.character_add_health_meter(CT_CHAR, HEALTH_METER_CHAR)
 
+    -- Gives your character(s) a category in the menu
+    _G.charSelect.character_set_category(CT_CHAR, TEXT_MOD_NAME)
+
     -- Adds credits to the credits menu
     _G.charSelect.credit_add(TEXT_MOD_NAME, "You", "Pack")
 end
